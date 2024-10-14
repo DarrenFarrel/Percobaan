@@ -1,0 +1,155 @@
+.navbar {
+    background-color: #24235b;
+    width: 100%;
+  }
+ 
+.nav-link {
+    color: white !important;
+    padding: 14px 16px;
+  }
+ 
+.nav-link:hover {
+    background-color: rgb(5, 208, 181) !important;
+}
+.butt :hover{
+    background-color: rgb(5, 208, 181);
+    color: white;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: white !important;
+  }
+.utstekweb{
+    background-color: rgb(5, 208, 181);
+    color: white;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 10%;
+}
+.utsimg{
+    border-radius: 50%;
+}
+.line-left, .line-right {
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background-color: black;
+}
+.line-left {
+    margin-right: 10px;
+  }
+ 
+  .line-right {
+    margin-left: 10px;
+  }
+#portofolio{
+    color: black;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+#about{
+    background-color: rgb(5, 208, 181);
+    color: white;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+#contactme{
+    color: black;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.card {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+.card-img-top {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.image-container {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+
+
+.aboutpar1{
+    text-align: center;
+}
+.aboutpar2{
+    text-align: center;
+}
+
+footer{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    background-color: rgb(37, 37, 52);
+    color: white;
+}
+.img-fluid{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.card-img-top{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.separator .line {
+    width: 100px;
+    height: 2px;
+    background-color: #2c3e50;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.modal-header {
+    text-align: center;
+}
+.close-icon {
+    font-size: 24px;
+    margin-left: 95%;
+    cursor: pointer;
+    color: #000;
+}
+.modal-content{
+    text-align: center;
+}
+.modal-footer{
+    margin-right: 32.5%;
+}
+.closeic{
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+}
+.form-label{
+    font-size: 20px;
+    text-align: left;
+}
+.form-select{
+    padding-left: 43%;
+    padding-right: 43%;
+}

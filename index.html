@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        .navbar div {
+            transition: background-color 0.5s ease;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Backdrop for darkening the background when modal is open -->
+    <div id="backdrop" class="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-40 hidden"></div>
+
+    <div class="w-full z-0">
+        <div class="navbar fixed bg-gray-700 w-full p-[15px] flex flex-row">
+            <div class="text-white w-[70%] text-[20px] pl-[10px] flex items-center">
+                <h2>Teknologi Website</h2>
+            </div>
+            <div class="text-white w-[30%] flex items-center justify-center gap-[30px]">
+                <div id="div-nav-portfolio" class="p-2"><a href="#portfolio" id="nav-portfolio">PORTFOLIO</a></div>
+                <div id="div-nav-about" class="p-2"><a href="#about" id="nav-about">ABOUT</a></div>
+                <div id="div-nav-contact" class="p2"><a href="#contact" id="nav-contact">CONTACT</a></div>
+            </div>            
+        </div>
+        <div class="header bg-green-400 w-full h-[70vh] flex flex-col items-center justify-center gap-[20px] pt-[50px] pb-[40px]">
+            <div class="bg-red-200 w-[100px] h-[100px]">
+                <img src="" alt="">
+            </div>
+            <div class="text-white flex flex-col items-center">
+                <h1 class="text-[40px]">UTS TEKNOLOGI WEBSITE</h1>
+                <h1 class="text-[30px]">--------*--------</h1>
+                <h1>Ya itu lah</h1>
+            </div>
+        </div>
+        <div id="portfolio" class="w-full flex flex-col items-center justify-center p-[30px] mt-[100px]">
+            <div class="text-[30px] flex flex-col items-center mb-[20px]">
+                <h1>PORTFOLIO</h1>
+                <h1>--------*--------</h1>
+            </div>
+            <div class="w-full flex flex-wrap gap-[50px] justify-center items-center">
+                <div id="portfolio1" class="w-[400px] h-[250px] bg-red-300">
+                    <img class="w-full" src="tree.jpeg" alt="gambar1">
+                </div>
+                <div id="portfolio2" class="w-[400px] h-[250px] bg-red-300">
+                    <img src="" alt="gambar2">
+                </div>
+                <div id="portfolio3" class="w-[400px] h-[250px] bg-red-300">
+                    <img src="" alt="gambar3">
+                </div>
+                <div id="portfolio4" class="w-[400px] h-[250px] bg-red-300">
+                    <img src="" alt="gambar4">
+                </div>
+                <div id="portfolio5" class="w-[400px] h-[250px] bg-red-300">
+                    <img src="" alt="gambar5">
+                </div>
+                <div id="portfolio6" class="w-[400px] h-[250px] bg-red-300">
+                    <img src="" alt="gambar6">
+                </div>
+            </div>
+        </div>
+        <div id="about" class="bg-blue-400 w-full flex flex-col items-center justify-center gap-[20px] py-[50px] my-[100px]">
+            <h1>ABOUT</h1>
+            <h1>--------*--------</h1>
+            <div class="flex flex-row w-[450px] gap-[30px]">
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, iste obcaecati quae tempora vel assumenda cum accusantium voluptatum corporis maxime! Animi porro et, commodi quidem culpa veniam nam inventore. Dolorem.</p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate excepturi ipsam ab labore accusamus eveniet quasi placeat est, totam eaque nemo obcaecati dolor molestiae suscipit nulla repudiandae tempora reiciendis perspiciatis?</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="contact w-full flex flex-col items-center justify-center p-[2px] mb-[50px] min-h-[70vh]">
+            <div class="text-[30px] flex flex-col items-center mb-5">
+                <h1>CONTACT ME</h1>
+                <h1>--------*--------</h1>
+            </div>
+            <div id="display" class="w-full gap-[20px] grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 grid-flow-row p-[40px]">
+            <!-- <div id="display" class="w-full flex flex-wrap gap-[20px] justify-start items-start"> Bisa pakai flex-->
+
+
+            </div>
+            <button onclick="contact()" class="bg-green-400 p-[8px] w-[100px] rounded-md flex items-center justify-center mt-[40px]">Contact!</button>
+        </div>
+        <div class="footer bg-gray-700 w-full p-[40px] flex flex-row justify-center text-white gap-[50px]">
+            <div class="w-[300px] flex flex-col items-center text-center">
+                <h1 class="font-bold mb-4">LOCATION</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sint nobis quasi eius? Esse odio, quod modi ut fugiat atque voluptate numquam molestias sapiente, quibusdam, nam libero corporis ratione incidunt!</p>
+            </div>
+            <div class="w-[300px] flex flex-col items-center text-center">
+                <h1 class="font-bold mb-4">AROUND THE WEB</h1>
+                <div class="flex justify-center space-x-4 mb-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="w-[300px] flex flex-col items-center text-center">
+                <h1 class="font-bold mb-4">ABOUT WEB TECHNOLOGY</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga possimus delectus praesentium et accusantium facere culpa est consequuntur, id atque vero, quaerat ut nisi? Unde molestiae ullam consectetur exercitationem numquam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolioModal" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vh] h-[90vh] bg-red-200 p-[50px] flex flex-col items-center z-50 hidden">
+        <div class="text-[30px] flex flex-col items-center mb-[20px]">
+            <h1 id="portfolioTitle">Default</h1>
+            <h1>--------*--------</h1>
+        </div>
+        <div id="portfolioImage" class="w-[400px] h-[250px] bg-red-300">
+            <img class="w-full" src="" alt="">
+        </div>
+        <div class="p-[40px] flex items-center justify-center text-center">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis suscipit unde adipisci. Dolores sed ipsam ipsa laboriosam voluptatibus, assumenda itaque est repellendus eum vel nesciunt minima, doloribus soluta, odit ad?</p>
+        </div>
+        <button id="closePortfolioModal" class="flex items-center justify-center text-center bg-green-400 px-[20px] py-[10px]">X Close Window</button>
+    </div>
+
+    <div id="contactModal" class="fixed w-[70vh] h-[60vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-md z-50 hidden">
+        <div class="bg-green-400 w-full p-[10px]">
+            <h3 class="text-white">Contact !</h3>
+            <button onclick="closeContactModal()" class="px-2 absolute top-0 right-0 bg-transparent border-0 text-white">X</button>
+        </div>
+        <div class="p-5 flex flex-col">
+            <div class="mb-3">
+                <label for="inputTitle" class="block text-gray-700">Title</label>
+                <input class="border border-gray-300 rounded-md p-2 w-full" id="inputTitle" type="text" placeholder="Input title">
+            </div>
+            <div class="mb-3">
+                <label for="inputMessage" class="block text-gray-700">Message</label>
+                <textarea class="border border-gray-300 rounded-md p-2 w-full" id="inputMessage" placeholder="Input message" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="inputColor" class="block text-gray-700">Color</label>
+                <select id="inputColor" class="border border-gray-300 rounded-md p-2 w-full">
+                    <option value="yellow">Yellow</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            <div class="flex justify-end">
+                <button onclick="sendMessage()" class="bg-green-400 text-white p-2 rounded-md">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to show the backdrop
+        function showBackdrop() {
+            $('#backdrop').removeClass('hidden');
+        }
+
+        // Function to hide the backdrop
+        function hideBackdrop() {
+            $('#backdrop').addClass('hidden');
+        }
+
+
+        //CONTACT SECTION
+        function contact() {
+            openContactModal();
+        }
+
+        function sendMessage(){
+            const title = $('#inputTitle').val();
+            const message = $('#inputMessage').val();
+            const color = $('#inputColor').val();
+            
+            var displayContainer = $('#display');
+            var newDiv = $(`
+                <div class="text-white shadow-lg rounded-md p-4 w-[15%] min-w-[200px]" style="background-color: ${color}">
+                    <h2 id="contactTitle" class="text-lg font-bold"></h2>
+                    <p id="contactMessage" class="text-gray-300"></p>
+                </div>
+            `);
+
+            newDiv.find('#contactTitle').text(title);
+            newDiv.find('#contactMessage').text(message);
+            
+            displayContainer.append(newDiv);
+            
+            $('#inputTitle').val('');
+            $('#inputMessage').val('');
+            $('#inputColor').val('');
+
+            closeContactModal();
+            
+        }
+
+        function openContactModal() {
+            $('#contactModal').removeClass('hidden');
+            showBackdrop();
+        }
+
+        function closeContactModal() {
+            $('#contactModal').addClass('hidden');
+            hideBackdrop();
+        }
+
+
+
+        //PORTFOLIO SECTION
+        function openPortfolioModal(title, imageSrc) {
+            // Set the title and image source in the modal
+            $('#portfolioTitle').text(title);
+            $('#portfolioImage img').attr('src', imageSrc);
+            
+            // Show the modal
+            $('#portfolioModal').removeClass('hidden');
+            showBackdrop();
+        }
+
+        // Function to close the portfolio modal
+        function closePortfolioModal() {
+            $('#portfolioModal').addClass('hidden');
+            hideBackdrop();
+        }
+
+        // Click event listener for the close button in the portfolio modal
+        $('#closePortfolioModal').click(function() {
+            closePortfolioModal();
+        });
+
+        // Add click event listener to portfolio items
+        $('#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6').click(function() {
+            // Get the image and alt text of the clicked portfolio item
+            var imageSrc = $(this).find('img').attr('src');
+            var imageAlt = $(this).find('img').attr('alt');
+            
+            // Open the portfolio modal with the alt text as title and image source
+            openPortfolioModal(imageAlt, imageSrc);
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+        // Function to handle scroll and highlight the navbar links
+        $(window).on('scroll', function() {
+            var scrollPos = $(document).scrollTop(); // Get the current scroll position
+            var documentHeight = $(document).height(); // Get the height of the document
+            var windowHeight = $(window).height(); // Get the height of the window
+
+             // Check if the position is on very top (0) or at the very end
+             if (scrollPos === 0 || scrollPos + windowHeight >= documentHeight) {
+                // Remove highlight from all navbar links if at the top or bottom
+                $('.navbar div').removeClass('bg-green-400');
+                return; // Exit the function early
+            }
+
+            // Iterate over each section (portfolio, about, contact) and check if it's in view
+            $('#portfolio, #about, #contact').each(function() {
+                var sectionOffset = $(this).offset().top-500; 
+                var sectionHeight = $(this).outerHeight();
+                var sectionId = $(this).attr('id');
+
+                // Check if the current scroll position is within the section
+                if (scrollPos >= sectionOffset && scrollPos < sectionOffset + sectionHeight) {
+                    // Remove red highlight from all navbar links
+                    $('.navbar div').removeClass('bg-green-400');
+                    // Highlight the active section's navbar link
+                    $('#div-nav-' + sectionId).addClass('bg-green-400');
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
